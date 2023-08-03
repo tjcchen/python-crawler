@@ -1,5 +1,5 @@
 #
-# Crawl reviews with Python from TripAdvisor
+# Crawl data with Python from TripAdvisor
 #
 # List: https://www.tripadvisor.com/Restaurants-g155019-Toronto_Ontario.html
 # Detail: https://www.tripadvisor.com/Restaurant_Review-g155019-d23978218-Reviews-Casa_Madera-Toronto_Ontario.html
