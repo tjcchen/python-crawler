@@ -7,10 +7,11 @@
 # Install packages with pip: python3 -m pip install "requests"
 #
 
-import requests    # send requests
-import parsel      # analyze response data
-import re          # regular expression
-import csv         # store data in csv format
+import requests            # send requests
+import parsel              # analyze response data
+import re                  # regular expression
+import csv                 # store data in csv format
+import concurrent.futures  # multi-threads
 from datetime import datetime
 
 
@@ -58,5 +59,13 @@ def main():
             csv_writer.writerow([store_name, comment_count, address, phone, website, link])
 
 
+# multi-threads
+# if __name__ == "__main__":
+#     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as exe:
+#         exe.submit(main)
+
+
+# regular
 if __name__ == "__main__":
     main()
+
